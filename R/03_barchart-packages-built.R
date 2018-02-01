@@ -9,7 +9,7 @@ ggplot(apt_freqtable, aes(x = Built, y = n)) +
 
 ## write this barchart to figs/built-barchart.png
 ## if you use ggplot2, ggsave() will help
-ggsave(filename = here("figs","built-barchart.png")
+ggsave(filename = here("figs","built-barchart.png"))
 ## YES overwrite the file that is there now
 ## that came from me (Jenny)
 
