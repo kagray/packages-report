@@ -11,7 +11,7 @@ library(tidyverse)
 ##   * Priority
 ##   * Built
 
-write_csv(myPkg,path = "data/installed-packages.csv")
+write_csv(myPkg,path = here("data","installed-packages.csv"))
 ## write it to data/installed-packages.csv
 ## YES overwrite the file that is there now
 ## that came from me (Jenny)
