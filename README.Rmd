@@ -32,15 +32,20 @@ The goal of packages-report is to FINISH THIS SENTENCE.
 
 ```{r, include = FALSE}
 ## load data/add-on-packages-freqtable.csv here in this chunk
+library(tidyverse)
+library(knitr)
+apt_freqtable <- read_csv(file = "data/add-on-packages-freqtable.csv")
+pkgNum <- sum(apt_freqtable$n)
 ```
 
-I have `FILL THIS IN!!!` add-on packages installed.
+I have `pkgNum` add-on packages installed.
 
 Here's how they break down in terms of which version of R they were built under, which is related to how recently they were updated on CRAN.
 
 ```{r, echo = FALSE}
 ## print the frequency table here
 ## make it prettier if you know how
+kable(apt_freqtable)
 ```
 
 ![](figs/built-barchart.png)
